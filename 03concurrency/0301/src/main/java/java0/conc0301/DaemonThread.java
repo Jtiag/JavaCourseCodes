@@ -17,7 +17,8 @@ public class DaemonThread {
         };
         Thread thread = new Thread(task);
         thread.setName("test-thread-1");
-        thread.setDaemon(false);
+        // 设置为true时 主线程退出后上面的子线程只有一个会直接退出，不会打印当前线程......
+        thread.setDaemon(true);
         thread.start();
     }
     
