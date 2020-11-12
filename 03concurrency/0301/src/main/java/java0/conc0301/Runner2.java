@@ -15,7 +15,7 @@ public class Runner2 implements Runnable {
         boolean result3 = Thread.currentThread().isInterrupted();
 
         System.out.println("Runner2.run result ===>" + result);
-        System.out.println("Runner2.run result1 ===>" + result1);
+        System.out.println("Runner2.run result1 has reset===>" + result1);
         System.out.println("Runner2.run result3 ===>" + result3);
         
         

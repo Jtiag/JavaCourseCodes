@@ -16,7 +16,8 @@ public class RunnerMain {
         thread1.start();
         thread2.start();
 
-        thread2.interrupt();  // i = true
+        // i = true 注意与interrupted 的区别
+        thread2.interrupt();
 
         System.out.println(Thread.activeCount());
         

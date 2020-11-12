@@ -9,6 +9,8 @@ public class SemaphoreDemo {
         Semaphore semaphore = new Semaphore(5); //机器数目
         for (int i = 0; i < N; i++)
             new Worker(i, semaphore).start();
+
+        System.out.println("主线程退出");
     }
     
     static class Worker extends Thread {
