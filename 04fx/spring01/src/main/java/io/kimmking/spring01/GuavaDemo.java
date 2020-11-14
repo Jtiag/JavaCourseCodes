@@ -61,7 +61,7 @@ public class GuavaDemo {
                 a -> bMultimap.put(a,a+1)
         );
         print(bMultimap);
-    
+        // 要求key value都唯一
         BiMap<String, Integer> words = HashBiMap.create();
         words.put("First", 1);
         words.put("Second", 2);

@@ -14,7 +14,7 @@ public class LombokDemo {
         Student student1 = new Student();
         student1.setId(1);
         student1.setName("KK01");
-        System.out.println(student1.toString());
+        log.info(student1.toString());
         
         Student student2 = new Student(2, "KK02");
         System.out.println(student2.toString());
