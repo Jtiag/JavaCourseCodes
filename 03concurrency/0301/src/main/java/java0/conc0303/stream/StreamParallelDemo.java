@@ -19,7 +19,7 @@ public class StreamParallelDemo {
 //      // 串行，单线程
 //      longList.stream().forEach(
         // 并行，默认使用CPU * 2个线程
-        longList.stream().forEach(
+        longList.stream().parallel().forEach(
                 i -> {
             try {
                 blockingQueue.put(i);
